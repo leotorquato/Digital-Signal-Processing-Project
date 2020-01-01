@@ -39,7 +39,7 @@ while True:
 	          if len(approx) == 4: # If 4 sided contour is detected
 		            cv2.putText(frame, "Square". (x, y), font, 1, (0, 255, 0))         # Labels square in green
 
-    cv2.imshow("Frame", image)                          # Show frame in window
+    cv2.imshow("Frame", frame)                          # Show frame in window
     cv2.imshow("Mask", mask)                            # Show mask in window
     key = cv2.waitKey(1)
     if key == 27:
